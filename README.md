@@ -3,7 +3,7 @@ Most commonly used Image Processing tasks include; Image Restoration, Image Segm
 Mathematics is quite inherent and deeply connected to various core Image
 Processing tasks: just like, De-noising, De-blurring, Enhancement, Segmentation and Edge Detection etc. The study of such Image Processing tasks provides a unique opportunity of incorporating Mathematical tools and techniques to address several of the Image Processing applications in various scientific fields of study.
 
-Histogram Equalization
+## 1) Histogram Equalization
 The operation of histogram equalization is used to reassign grey values in the image, such that the histogram of the resultant image is (theoretically) flat. I say theoretically because practically, image intensities are discrete, and it may not be possible to reassign values equally across greyscale.
 Practically speaking, this also means that the contrast is enhanced in the image, which is most of the times, a good thing, depending on your application.
 By contrast enhancement, we mean that intermediate greyscale intensities that were not well represented in the image earlier, are now distributed better, and the intensities that occurred with very high frequency are de-emphasized.
@@ -12,7 +12,7 @@ By contrast enhancement, we mean that intermediate greyscale intensities that we
 
 Mostly the histogram isn't perfectly flat and perfectly distributed after equalization, and the mean will be close to the middle grey level. Closer to the middle grey level after histogram equalization than it was earlier.
 
-2) Spatial Linear Filters
+## 2) Spatial Linear Filters
 There are two classes of spatial linear filters:
 (i) smoothing linear spatial filters
 (ii) sharpening linear spatial filters
@@ -23,7 +23,7 @@ Smoothing is known to cause local averaging (or blurring),which is similar with 
 Sharpening linear spatial filters
 Sharpening linear filters for image enhancement uses the Laplacian technique. It is assumed that image function f has second order partial derivatives.
 
-Discrete Cosine Transform (DCT)
+## 3)Discrete Cosine Transform (DCT)
 
 This technique is used for performing image compression 
 step 1
@@ -40,7 +40,7 @@ sharing images with lossy compression over the web. Discrete Cosine Transform (D
  DCT performs execution using mathematical operation technique known as Fast Fourier Transform (FFT). FFT takes one signal as an input and then transforms the representation from one type to another. In this transformation process, a signal from the spatial domain
 gets transformed to the frequency domain. During this process, information redundancy is kept minimum because of kernel functions (cosines) comprise an orthogonal basis. This technique was first developed by J.W. Cooley and J.W. Tukey in 1965. FFT found wide acceptance since it helped in reducing the computation time and increased the ease of performing the digital Fourier analysis much more feasible.
 
-4) Laplacian Distribution
+## 4) Laplacian Distribution
 The Laplacian distribution is one of the most commonly used approach used for performing image analysis. Since Laplacian approach uses invariant Gaussian kernels, there are known issues with regard to inability to represent the edges of images suitably. Hence, this approach
 is not recommended for edge centric operations like preservation of  image edges, image, smoothing and tone mapping. 
 Laplacian Operator is also known as a derivative operator which is used to find edges in an image. The major difference between Laplacian and other operators like Prewitt, Sobel, Robinson and Kirsch is that these all are first order derivative masks but Laplacian is a second order derivative mask. In this mask we have two further classifications one is Positive Laplacian Operator and other is Negative Laplacian Operator.
