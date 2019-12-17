@@ -8,7 +8,7 @@ The operation of histogram equalization is used to reassign grey values in the i
 Practically speaking, this also means that the contrast is enhanced in the image, which is most of the times, a good thing, depending on your application.
 By contrast enhancement, we mean that intermediate greyscale intensities that were not well represented in the image earlier, are now distributed better, and the intensities that occurred with very high frequency are de-emphasized.
  
-https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Histogrammeinebnung.png/300px-Histogrammeinebnung.png
+![alt text] (https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Histogrammeinebnung.png/300px-Histogrammeinebnung.png)
 
 Mostly the histogram isn't perfectly flat and perfectly distributed after equalization, and the mean will be close to the middle grey level. Closer to the middle grey level after histogram equalization than it was earlier.
 
